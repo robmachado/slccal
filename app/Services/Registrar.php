@@ -1,6 +1,6 @@
-<?php namespace App\Services;
+<?php namespace robmachado\slccal\Services;
 
-use App\User;
+use robmachado\slccal\User;
 use Validator;
 use Illuminate\Contracts\Auth\Registrar as RegistrarContract;
 

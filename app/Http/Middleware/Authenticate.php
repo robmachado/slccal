@@ -1,4 +1,4 @@
-<?php namespace App\Http\Middleware;
+<?php namespace robmachado\slccal\Http\Middleware;
 
 use Closure;
 use Illuminate\Contracts\Auth\Guard;

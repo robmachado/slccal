@@ -1,4 +1,4 @@
-<?php namespace App\Commands;
+<?php namespace robmachado\slccal\Commands;
 
 abstract class Command {
 

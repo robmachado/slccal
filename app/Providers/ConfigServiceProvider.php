@@ -1,4 +1,4 @@
-<?php namespace App\Providers;
+<?php namespace robmachado\slccal\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
