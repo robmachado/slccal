@@ -1,6 +1,6 @@
 <?php
 
-$dir_iterator = new RecursiveDirectoryIterator("/home/projetos/hermes");
+$dir_iterator = new RecursiveDirectoryIterator("/dados/projetos/robmachado/slccal");
 $iterator = new RecursiveIteratorIterator($dir_iterator, RecursiveIteratorIterator::SELF_FIRST);
 foreach ($iterator as $file) {
     if (is_file($file)) {
