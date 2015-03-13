@@ -5,11 +5,10 @@
     <div class="row">
         <div class="col-md-10 col-md-offset-1">
             <div class="panel panel-default">
-                <div class="panel-heading">Home</div>
+                <div class="panel-heading">Administração</div>
 
                 <div class="panel-body">
-                    <p>Você está logado e pode começar a utilizar o sistema.</p>
-                    <p>Bom trabalho.</p>
+                    You are logged in!
                 </div>
             </div>
         </div>
