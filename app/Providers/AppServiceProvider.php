@@ -1,4 +1,4 @@
-<?php namespace robmachado\slccal\Providers;
+<?php namespace slccal\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -27,7 +27,7 @@ class AppServiceProvider extends ServiceProvider {
     {
         $this->app->bind(
             'Illuminate\Contracts\Auth\Registrar',
-            'robmachado\slccal\Services\Registrar'
+            'slccal\Services\Registrar'
         );
     }
 

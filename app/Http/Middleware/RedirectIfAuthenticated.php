@@ -1,4 +1,4 @@
-<?php namespace robmachado\slccal\Http\Middleware;
+<?php namespace slccal\Http\Middleware;
 
 use Closure;
 use Illuminate\Contracts\Auth\Guard;
@@ -33,9 +33,12 @@ class RedirectIfAuthenticated {
      */
     public function handle($request, Closure $next)
     {
-        if ($this->auth->check()) {
+        if ($this->auth->check())
+        {
             return new RedirectResponse(url('/home'));
         }
+
         return $next($request);
     }
+
 }

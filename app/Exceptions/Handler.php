@@ -1,4 +1,4 @@
-<?php namespace robmachado\slccal\Exceptions;
+<?php namespace slccal\Exceptions;
 
 use Exception;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;

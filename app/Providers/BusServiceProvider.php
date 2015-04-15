@@ -1,4 +1,4 @@
-<?php namespace robmachado\slccal\Providers;
+<?php namespace slccal\Providers;
 
 use Illuminate\Bus\Dispatcher;
 use Illuminate\Support\ServiceProvider;
@@ -16,7 +16,7 @@ class BusServiceProvider extends ServiceProvider {
         $dispatcher->mapUsing(function($command)
         {
             return Dispatcher::simpleMapping(
-                $command, 'robmachado\slccal\Commands', 'robmachado\slccal\Handlers\Commands'
+                $command, 'slccal\Commands', 'slccal\Handlers\Commands'
             );
         });
     }

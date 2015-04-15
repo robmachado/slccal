@@ -3,7 +3,8 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateCalibrationscertTable extends Migration {
+class CreateCalibrationscertTable extends Migration
+{
 
     /**
      * Run the migrations.
@@ -33,6 +34,6 @@ class CreateCalibrationscertTable extends Migration {
      */
     public function down()
     {
-        Schema::drop('masscalibrationscert');
+        Schema::drop('calibrationscert');
     }
 }

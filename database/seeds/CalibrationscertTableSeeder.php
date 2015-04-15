@@ -1,17 +1,15 @@
 <?php
 
-namespace slccal;
-
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
-use slccal\Models\Massclasse as Classe;
+use slccal\Models\CalibrationCert as Cert;
 
 class CalibrationscertTableSeeder extends Seeder
 {
     public function run()
     {
         // clear table
-        Classe::truncate();
+        Cert::truncate();
         //carrega dados
         //certificado emissor rbc data pdf
         $aRows = [
@@ -30,7 +28,7 @@ class CalibrationscertTableSeeder extends Seeder
             ['certificado'=>'LV34713-13-RO', 'emissor'=>'VISOMES', 'rbc'=>'0127', 'data'=>'2013-09-05', 'pdf'=>'']
         ];
         foreach ($aRows as $row) {
-            Classe::create($row);
+            Cert::create($row);
         }
     }
 }

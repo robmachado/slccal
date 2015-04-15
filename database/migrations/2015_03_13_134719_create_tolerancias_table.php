@@ -3,7 +3,8 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateToleranciasTable extends Migration {
+class CreateToleranciasTable extends Migration
+{
 
     /**
      * Run the migrations.

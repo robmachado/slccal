@@ -30,7 +30,8 @@ return [
     ],
 
     'stripe' => [
-        'model'  => 'User',
+        'model'  => 'slccal\User',
+        'key' => '',
         'secret' => '',
     ],
 

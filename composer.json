@@ -1,28 +1,28 @@
 {
     "name": "robmachado/slccal",
-    "description": "Sistema de getão de calibração de balanças",
-    "keywords": ["calibração", "balanças"],
+    "description": "Sistema de gestão de calibrações em balanças.",
+    "keywords": ["balanças", "calibração"],
     "license": "MIT",
-    "type": "application",
+    "type": "project",
     "require": {
-    	"laravel/framework": "5.0.*"
+        "laravel/framework": "5.0.*"
     },
     "require-dev": {
-    	"phpunit/phpunit": "~4.0",
-	"phpspec/phpspec": "~2.1"
+        "phpunit/phpunit": "~4.0",
+        "phpspec/phpspec": "~2.1"
     },
     "autoload": {
         "classmap": [
             "database"
         ],
         "psr-4": {
-           "slccal\\": "app/"
+            "slccal\\": "app/"
         }
     },
     "autoload-dev": {
-	"classmap": [
+        "classmap": [
             "tests/TestCase.php"
-	]
+        ]
     },
     "scripts": {
         "post-install-cmd": [
@@ -39,6 +39,6 @@
         ]
     },
     "config": {
-	"preferred-install": "dist"
+        "preferred-install": "dist"
     }
 }

@@ -1,4 +1,4 @@
-<?php namespace robmachado\slccal\Events;
+<?php namespace slccal\Events;
 
 abstract class Event {
 

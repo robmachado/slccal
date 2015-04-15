@@ -1,10 +1,8 @@
 <?php
 
-namespace slccal;
-
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
-use slccal\MOdels\Massclasse as Classe;
+use slccal\Models\MassClasse as Classe;
 
 class MassclasseTableSeeder extends Seeder
 {

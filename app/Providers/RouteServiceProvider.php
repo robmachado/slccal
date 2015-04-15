@@ -1,4 +1,4 @@
-<?php namespace robmachado\slccal\Providers;
+<?php namespace slccal\Providers;
 
 use Illuminate\Routing\Router;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
@@ -12,7 +12,7 @@ class RouteServiceProvider extends ServiceProvider {
      *
      * @var string
      */
-    protected $namespace = 'robmachado\slccal\Http\Controllers';
+    protected $namespace = 'slccal\Http\Controllers';
 
     /**
      * Define your route model bindings, pattern filters, etc.
@@ -22,9 +22,9 @@ class RouteServiceProvider extends ServiceProvider {
      */
     public function boot(Router $router)
     {
-        parent::boot($router);
-
         //
+        
+        parent::boot($router);
     }
 
     /**

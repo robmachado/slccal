@@ -4,7 +4,7 @@ namespace slccal\Models;
 
 use Illuminate\Database\Eloquent\Model;
  
-class Massclasse extends Model
+class MassClasse extends Model
 {
     /**
      * The database table used by the model.

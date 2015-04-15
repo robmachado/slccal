@@ -1,6 +1,4 @@
-<?php
-
-namespace slccal\Console;
+<?php namespace slccal\Console;
 
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;

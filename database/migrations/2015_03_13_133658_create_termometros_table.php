@@ -3,7 +3,8 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateTermometrosTable extends Migration {
+class CreateTermometrosTable extends Migration
+{
 
     /**
      * Run the migrations.
@@ -16,7 +17,7 @@ class CreateTermometrosTable extends Migration {
             'termometros',
             function (Blueprint $table) {
                 $table->increments('id');
-                $table->string('codigo', 20);//codigo do termometro
+                $table->string('codigo', 20)->unique();//codigo do termometro
                 $table->string('marca', 50);//fabricante do termometro
                 $table->string('modelo', 50);//modelo do termometro
                 $table->string('certificado', 58);//numero do certificado de calibração

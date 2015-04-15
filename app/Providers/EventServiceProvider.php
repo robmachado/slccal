@@ -1,4 +1,4 @@
-<?php namespace robmachado\slccal\Providers;
+<?php namespace slccal\Providers;
 
 use Illuminate\Contracts\Events\Dispatcher as DispatcherContract;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;

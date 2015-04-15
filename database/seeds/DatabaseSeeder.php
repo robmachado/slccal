@@ -1,7 +1,5 @@
 <?php
 
-namespace slccal;
-
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Eloquent\Model;

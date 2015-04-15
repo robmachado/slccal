@@ -1,4 +1,4 @@
-<?php namespace robmachado\slccal\Http;
+<?php namespace slccal\Http;
 
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
@@ -28,4 +28,5 @@ class Kernel extends HttpKernel {
         'auth.basic' => 'Illuminate\Auth\Middleware\AuthenticateWithBasicAuth',
         'guest' => 'slccal\Http\Middleware\RedirectIfAuthenticated',
     ];
+
 }

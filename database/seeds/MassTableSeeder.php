@@ -1,7 +1,5 @@
 <?php
 
-namespace slccal;
-
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use slccal\Models\Mass as Mass;
@@ -282,9 +280,7 @@ class MassTableSeeder extends Seeder
             ['codigo' => '1GQ06', 'colecao' => 'QUA.06', 'classe' => 'F1', 'material' => 'Aço Inox', 'nominal' => '1', 'unidade' => 'G', 'frequencia' => '24', 'situacao' => true, 'observacoes' => ''],
             ['codigo' => '1KGQ06', 'colecao' => 'QUA.06', 'classe' => 'F1', 'material' => 'Aço Inox', 'nominal' => '1', 'unidade' => 'kg', 'frequencia' => '24', 'situacao' => true, 'observacoes' => ''],
             ['codigo' => '200GQ06', 'colecao' => 'QUA.06', 'classe' => 'F1', 'material' => 'Aço Inox', 'nominal' => '200', 'unidade' => 'G', 'frequencia' => '24', 'situacao' => true, 'observacoes' => ''],
-            ['codigo' => '200GQ06', 'colecao' => 'QUA.06', 'classe' => 'F1', 'material' => 'Aço Inox', 'nominal' => '200', 'unidade' => 'G', 'frequencia' => '24', 'situacao' => true, 'observacoes' => ''],
             ['codigo' => '200MG1DQ06', 'colecao' => 'QUA.06', 'classe' => 'F1', 'material' => 'Aço Cromo', 'nominal' => '200', 'unidade' => 'MG', 'frequencia' => '24', 'situacao' => true, 'observacoes' => ''],
-            ['codigo' => '200MG2DQ06', 'colecao' => 'QUA.06', 'classe' => 'F1', 'material' => 'Aço Cromo', 'nominal' => '200', 'unidade' => 'MG', 'frequencia' => '24', 'situacao' => true, 'observacoes' => ''],
             ['codigo' => '20G1PQ06', 'colecao' => 'QUA.06', 'classe' => 'F1', 'material' => 'Aço Inox', 'nominal' => '20', 'unidade' => 'G', 'frequencia' => '24', 'situacao' => true, 'observacoes' => ''],
             ['codigo' => '20GQ06', 'colecao' => 'QUA.06', 'classe' => 'F1', 'material' => 'Aço Inox', 'nominal' => '20', 'unidade' => 'G', 'frequencia' => '24', 'situacao' => true, 'observacoes' => ''],
             ['codigo' => '20MG1DQ06', 'colecao' => 'QUA.06', 'classe' => 'F1', 'material' => 'Aço Cromo', 'nominal' => '20', 'unidade' => 'MG', 'frequencia' => '24', 'situacao' => true, 'observacoes' => ''],

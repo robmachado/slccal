@@ -1,6 +1,6 @@
-<?php namespace robmachado\slccal\Http\Controllers\Auth;
+<?php namespace slccal\Http\Controllers\Auth;
 
-use robmachado\slccal\Http\Controllers\Controller;
+use slccal\Http\Controllers\Controller;
 use Illuminate\Contracts\Auth\Guard;
 use Illuminate\Contracts\Auth\PasswordBroker;
 use Illuminate\Foundation\Auth\ResetsPasswords;

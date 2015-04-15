@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'debug' => env('APP_DEBUG'),
+    'debug' => env('APP_DEBUG', false),
 
     /*
     |--------------------------------------------------------------------------
@@ -139,11 +139,11 @@ return [
         /*
          * Application Service Providers...
          */
-        'robmachado\slccal\Providers\AppServiceProvider',
-        'robmachado\slccal\Providers\BusServiceProvider',
-        'robmachado\slccal\Providers\ConfigServiceProvider',
-        'robmachado\slccal\Providers\EventServiceProvider',
-        'robmachado\slccal\Providers\RouteServiceProvider',
+        'slccal\Providers\AppServiceProvider',
+        'slccal\Providers\BusServiceProvider',
+        'slccal\Providers\ConfigServiceProvider',
+        'slccal\Providers\EventServiceProvider',
+        'slccal\Providers\RouteServiceProvider',
 
     ],
 

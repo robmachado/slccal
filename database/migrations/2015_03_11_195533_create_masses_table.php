@@ -17,7 +17,7 @@ class CreateMassesTable extends Migration
             'masses',
             function (Blueprint $table) {
                 $table->increments('id');
-                $table->string('codigo', 8)->unique(); //codigo da massa
+                $table->string('codigo', 15)->unique(); //codigo da massa
                 $table->string('colecao', 8); //codigo da coleção
                 $table->string('classe', 8);//classe da massa
                 $table->string('material', 60);//material da massa
@@ -38,6 +38,6 @@ class CreateMassesTable extends Migration
      */
     public function down()
     {
-        Schema::drop('mass');
+        Schema::drop('masses');
     }
 }

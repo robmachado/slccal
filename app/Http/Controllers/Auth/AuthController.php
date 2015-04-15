@@ -1,6 +1,6 @@
-<?php namespace robmachado\slccal\Http\Controllers\Auth;
+<?php namespace slccal\Http\Controllers\Auth;
 
-use robmachado\slccal\Http\Controllers\Controller;
+use slccal\Http\Controllers\Controller;
 use Illuminate\Contracts\Auth\Guard;
 use Illuminate\Contracts\Auth\Registrar;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
@@ -31,6 +31,8 @@ class AuthController extends Controller {
     {
         $this->auth = $auth;
         $this->registrar = $registrar;
+
         $this->middleware('guest', ['except' => 'getLogout']);
     }
+
 }

@@ -1,4 +1,4 @@
-<?php namespace robmachado\slccal\Http\Controllers;
+<?php namespace slccal\Http\Controllers;
 
 class WelcomeController extends Controller {
 
