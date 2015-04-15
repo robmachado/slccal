@@ -1,4 +1,6 @@
-<?php namespace robmachado\slccal\Console;
+<?php
+
+namespace slccal\Console;
 
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
@@ -11,7 +13,7 @@ class Kernel extends ConsoleKernel {
      * @var array
      */
     protected $commands = [
-        'robmachado\slccal\Console\Commands\Inspire',
+        'slccal\Console\Commands\Inspire',
     ];
 
     /**
