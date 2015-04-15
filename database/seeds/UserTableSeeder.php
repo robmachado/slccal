@@ -1,8 +1,10 @@
 <?php
 
+namespace slccal;
+
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
-use robmachado\slccal\User;
+use slccal\Models\User;
 
 class UserTableSeeder extends Seeder
 {
@@ -12,7 +14,12 @@ class UserTableSeeder extends Seeder
         User::truncate();
         //carrega dados
         $aRows = [
-            ['username' => 'administrador', 'fullname' => 'administrador', 'email' => 'linux.rlm@gmail.com', 'password' => Hash::make('admin')]
+            [
+                'username' => 'administrador',
+                'fullname' => 'administrador',
+                'email' => 'linux.rlm@gmail.com',
+                'password' => Hash::make('admin')
+            ]
         ];
         foreach ($aRows as $row) {
             User::create($row);

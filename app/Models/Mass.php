@@ -1,23 +1,33 @@
 <?php
 
-namespace robmachado\slccal;
+namespace slccal\Models;
 
 use Illuminate\Database\Eloquent\Model;
-
-class Nota extends Model
+ 
+class Mass extends Model
 {
     /**
      * The database table used by the model.
      *
      * @var string
      */
-    protected $table = 'notas';
+    protected $table = 'masses';
     
     /**
      * Campos que podem ser atribuidos em massa
      * @var array 
      */
-    protected $fillable = ['anotacao'];
+    protected $fillable = [
+        'codigo',
+        'colecao',
+        'classe',
+        'material',
+        'nominal',
+        'unidade',
+        'frequencia',
+        'situacao',
+        'observacoes'
+    ];
     
     /**
      * Campos excluidos do modelo JSON.

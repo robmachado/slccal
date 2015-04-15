@@ -29,7 +29,7 @@ class CreateCalibdataTable extends Migration {
                 $table->string('massas', 500);//lista de massas
                 $table->double('erro', 12, 8);//valor do erro sistemático
                 $table->double('incerteza', 12, 8);//valor da incerteza
-                
+                $table->double('k', 12, 8);//valor do k
                 $table->timestamps();
             }
         );

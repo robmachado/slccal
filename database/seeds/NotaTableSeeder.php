@@ -1,8 +1,10 @@
 <?php
 
+namespace slccal;
+
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
-use robmachado\slccal\Nota;
+use slccal\Models\Nota;
 
 class NotaTableSeeder extends Seeder
 {

@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateMasscalibrationscertTable extends Migration {
+class CreateCalibrationscertTable extends Migration {
 
     /**
      * Run the migrations.
@@ -13,15 +13,14 @@ class CreateMasscalibrationscertTable extends Migration {
     public function up()
     {
         Schema::create(
-            'masscalibrationscert',
+            'calibrationscert',
             function (Blueprint $table) {
                 $table->increments('id');
-                $table->string('certificado', 58);//numero do certificado
+                $table->string('certificado', 58)->unique();//numero do certificado
                 $table->string('emissor', 150);//identificação do emissor
                 $table->string('rbc', 10);//numero RBC do emissor
-                $table->integer('frequencia');//frequencia de calibração
                 $table->date('data');//data da calibração
-                $table->date('proxima');//data da proxima calibração
+                $table->text('pdf');//pdf do certificado em gzip/base64
                 $table->timestamps();
             }
         );

@@ -17,10 +17,10 @@ class CreateTermometrosTable extends Migration {
             function (Blueprint $table) {
                 $table->increments('id');
                 $table->string('codigo', 20);//codigo do termometro
-                $table->string('certificado', 20);//numero do certificado de calibração
-                $table->string('calibrador', 250);//laboratório de calibração
-                $table->date('data');
-                $table->date('validade');
+                $table->string('marca', 50);//fabricante do termometro
+                $table->string('modelo', 50);//modelo do termometro
+                $table->string('certificado', 58);//numero do certificado de calibração
+                $table->integer('frequencia');//frequencia de calibração
                 $table->timestamps();
             }
         );

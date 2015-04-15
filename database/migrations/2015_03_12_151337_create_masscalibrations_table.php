@@ -16,11 +16,13 @@ class CreateMasscalibrationsTable extends Migration {
             'masscalibrations',
             function (Blueprint $table) {
                 $table->increments('id');//id da calibração da massa padrão
-                $table->integer('masscalibratioscert_id');//id da do certificado ce calibração da coleção de massas
                 $table->string('codigo', 8);//codigo da massa padrão
+                $table->string('certificado', 58);//numero do certificado
+                $table->integer('frequencia');//frequencia de calibração
+                $table->date('proxima');//data da proxima calibração
                 $table->double('valor', 12, 8);//valor real obtido na calibração menor ou igual a 2/3 da tolernacia para a classe
                 $table->double('incerteza', 12, 8);//valor da incerteza na calibração menor ou igual a 1/3 da tolerancia
-                $table->integer('k');//valor do k referente a calibração
+                $table->double('k', 12, 8);//valor do k
                 $table->string('unidade', 4);//unidade da massa
                 $table->boolean('situacao');//status da massa valida ou invalida
                 $table->text('observacoes'); //informações adicionais

@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateMassTable extends Migration
+class CreateMassesTable extends Migration
 {
 
     /**
@@ -14,7 +14,7 @@ class CreateMassTable extends Migration
     public function up()
     {
         Schema::create(
-            'mass',
+            'masses',
             function (Blueprint $table) {
                 $table->increments('id');
                 $table->string('codigo', 8)->unique(); //codigo da massa

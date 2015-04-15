@@ -1,23 +1,23 @@
 <?php
 
-namespace robmachado\slccal;
+namespace slccal\Models;
 
 use Illuminate\Database\Eloquent\Model;
- 
-class Tolerancia extends Model
+
+class Nota extends Model
 {
     /**
      * The database table used by the model.
      *
      * @var string
      */
-    protected $table = 'tolerancias';
+    protected $table = 'notas';
     
     /**
      * Campos que podem ser atribuidos em massa
      * @var array 
      */
-    protected $fillable = ['classe', 'min', 'max', 'erro'];
+    protected $fillable = ['anotacao'];
     
     /**
      * Campos excluidos do modelo JSON.

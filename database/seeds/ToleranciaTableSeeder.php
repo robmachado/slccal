@@ -1,8 +1,10 @@
 <?php
 
+namespace slccal;
+
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
-use robmachado\slccal\Tolerancia as Tolerancia;
+use slccal\Models\Tolerancia as Tolerancia;
 
 class ToleranciaTableSeeder extends Seeder
 {
@@ -11,8 +13,8 @@ class ToleranciaTableSeeder extends Seeder
         // clear table
         Tolerancia::truncate();
         //carrega dados
+        //'classe', 'min' => , 'max' => , 'erro' =>
         $aRows = [
-            //'classe', 'min' => , 'max' => , 'erro' =>
             ['classe' => 'I', 'min' => '0', 'max' => '50000', 'erro' =>'0.5'],
             ['classe' => 'I', 'min' => '50001', 'max' => '200000', 'erro' =>'1.0'],
             ['classe' => 'I', 'min' => '200001', 'max' => '4294967294', 'erro' =>'1.5'],

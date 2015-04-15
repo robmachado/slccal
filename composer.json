@@ -16,7 +16,7 @@
 			"database"
 		],
 		"psr-4": {
-			"robmachado\\slccal\\": "app/"
+			"slccal\\": "app/"
 		}
 	},
 	"autoload-dev": {
